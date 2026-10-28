@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Curso de Sistemas Operativos – Fran. J. Ballesteros</title>
+<link rel="stylesheet" href="../style.css">
+<link rel="icon" href="../images/cropped-cloud.jpg">
+</head>
+<body>
+<header class="site">
+<div class="brand"><a class="site-title" href="../">Fran. J. Ballesteros</a><div class="tagline">mariner!nemo</div></div>
+<nav><ul class="menu"><li><a href="../">mariner!nemo</a></li><li><a href="../systems/">Systems</a></li><li class="has-sub"><a href="../software/">Software</a><ul><li><a href="../rb/">Rb</a></li><li><a href="../clive/">Clive</a></li><li><a href="../nix/">Nix</a></li><li><a href="../octopus/">Octopus</a></li><li><a href="../plan-b/">Plan B</a></li><li><a href="../picky/">Picky</a></li><li><a href="../off/">Off++</a></li></ul></li><li><a href="../books-papers/">Docs</a></li><li><a href="../cursos/">Cursos</a></li><li><a href="../about/">About</a></li><li><a href="../rb/">Rb</a></li></ul></nav>
+</header>
+<main>
+<h1>Curso de Sistemas Operativos</h1>
+<p>En esta página tienes material para el curso de introducción a Sistemas Operativos que se imparte en la URJC, en la Escuela de Ingeniería de Telecomunicación, como parte de diversos grados de ingeniería de telecomunicación.</p>
+
+<p>El curso utiliza UNIX para enseñar qué abstracciones tiene un Sistema Operativo y cómo se usan. Esto es, cómo se programa en Linux o BSD usando C y cómo se utiliza el shell o intérprete de comandos en dicho sistema.</p>
+
+<p>Hay videos con explicaciones para algunos de los temas y, con el tiempo, se incluirán videos para el resto (aunque esta parte es todavía "work in progress").</p>
+
+<p>El libro de texto es <strong><a href="https://github.com/fjballest/docs/blob/master/uxintro.pdf">Introducción a las abstracciones del Sistema Operativo utilizando UNIX</a></strong>, Francisco J. Ballesteros 2016. Está todavía sin publicar pero tienes enlaces a PDFs en esta página.</p>
+
+<p>Tienes los videos de algunas partes en youtube.</p>
+
+<hr class="wp-block-separator" />
+
+<p>Los vídeos y secciones correspondientes del libro están en el orden en que deberían verse/leerse, agrupados por temas. El material no ha de utilizarse como referencia, ¡para eso ya está el manual!</p>
+
+<h3>Tema 1: Empezando</h3>
+
+<p><a href="https://github.com/fjballest/docs/blob/master/uxintro/chap01.pdf">Capítulo 1 del libro</a>. <br>¿Qué es el S.O.?</p>
+
+<ul><li><a href="https://youtu.be/coUaOnHJeSU">Clip #1. Funcionamiento del ordenador</a>.</li><li><a href="https://youtu.be/2Iya2tJFMb4">Clip #2. El kernel</a>.</li><li><a href="https://youtu.be/09RXNlY4abU">Clip #3 El kernel vs. los programas de aplicación</a>.</li><li><a href="https://youtu.be/P9gVFkZRb3k">Clip #4 El kernel como librería</a>.</li><li><a href="https://youtu.be/N8UOzhaqMkc">Clip #5 El kernel como multiplexor</a>.</li><li><a href="https://github.com/fjballest/docs/blob/master/uxintro/ch01a.pdf">Secciones de libro de texto</a>.</li></ul>
+
+<p>Llamadas al sistema</p>
+
+<ul><li><a href="https://youtu.be/gI7Ti60Gsy0">Clip #6. Abstracciones y llamadas al sistema</a>.</li><li><a href="https://youtu.be/T0bDc_RFLVM">Clip #7. Una llamada al sistema</a>.</li><li><a href="https://youtu.be/cKXz4SeuTzU">Clip #8. La pila y llamadas al sistema</a>.</li><li><a href="https://youtu.be/3iLUZBkzvzU">Clip #9. Comandos y llamadas al sistema</a>.</li><li><a href="https://youtu.be/McsH4gadJa4">Clip #10 Primera sesión en UNIX</a>.</li><li><a href="https://github.com/fjballest/docs/blob/master/uxintro/ch01b.pdf">Secciones de libro de texto</a>.</li></ul>
+
+<p>El shell</p>
+
+<ul><li><a href="https://youtu.be/U6DXYe8yeGM">Clip #11. El manual</a>.</li><li><a href="https://youtu.be/IVGOGX6DzGQ">Clip #12. Comandos y ficheros</a>.</li><li><a href="https://youtu.be/6OBF04KTwtA">Clip #13. Seguimos con comandos y ficheros</a>.</li><li><a href="https://github.com/fjballest/docs/blob/master/uxintro/ch01c.pdf">Secciones de libro de texto</a>.</li></ul>
+
+<p>Ficheros y directorios</p>
+
+<ul><li><a href="https://youtu.be/cLETwMGfASM">Clip #14. Árbol de ficheros y paths</a>.</li><li><a href="https://youtu.be/DCEffqrB2SA">Clip #15. Directorios. Paths absolutos y relativos</a>.</li><li><a href="https://youtu.be/QJL3eNK2OMI">Clip #16. Ficheros, bytes y líneas</a>.</li><li><a href="https://github.com/fjballest/docs/blob/master/uxintro/ch01d.pdf">Secciones de libro de texto</a>.</li></ul>
+
+<p>Usuarios y permisos</p>
+
+<ul><li><a href="https://youtu.be/EE5Hz0-u_yA">Clip #17. Usuarios, paths y permisos</a>.</li><li><a href="https://github.com/fjballest/docs/blob/master/uxintro/ch01e.pdf">Secciones de libro de texto</a>.</li></ul>
+
+<p>Compilación, enlazado y carga</p>
+
+<ul><li><a href="https://youtu.be/kwjgZp0uedc">Clip #18. Compilado y enlazado</a>.</li><li><a href="https://github.com/fjballest/docs/blob/master/uxintro/ch01f.pdf">Secciones de libro de texto</a>.</li></ul>
+
+<h3>Tema 2: Procesos</h3>
+
+<p><a href="https://github.com/fjballest/docs/blob/master/uxintro/chap02.pdf">Capítulo 2 del libro</a>. <br>Programas y procesos</p>
+
+<ul><li><a href="https://youtu.be/YI0TuqXu_gM">Clip #19. Programas y procesos</a>.</li><li><a href="https://github.com/fjballest/docs/blob/master/uxintro/ch02a.pdf">Secciones de libro de texto</a>.</li></ul>
+
+<p>Carga de programas y segmentos</p>
+
+<ul><li><a href="https://youtu.be/c2tGtoiB9mY">Clip #20. Carga de programas</a>.</li><li><a href="https://youtu.be/2IbYz710UIM">Clip #21. Segmentos de un proceso</a>.</li><li><a href="https://github.com/fjballest/docs/blob/master/uxintro/ch02b.pdf">Secciones de libro de texto</a>.</li></ul>
+
+<p>Nacimiento y muerte</p>
+
+<ul><li><a href="https://github.com/fjballest/docs/blob/master/uxintro/ch02c.pdf">Secciones de libro de texto</a>.</li></ul>
+
+<p>Errores</p>
+
+<ul><li><a href="https://github.com/fjballest/docs/blob/master/uxintro/ch02d.pdf">Secciones de libro de texto</a>.</li></ul>
+
+<p>Variables de entorno</p>
+
+<ul><li><a href="https://github.com/fjballest/docs/blob/master/uxintro/ch02e.pdf">Secciones de libro de texto</a>.</li></ul>
+
+<p>Nombres de procesos, atributos y usuarios.</p>
+
+<ul><li><a href="https://github.com/fjballest/docs/blob/master/uxintro/ch02f.pdf">Secciones de libro de texto</a>.</li></ul>
+
+<p>Límites, depuradores y core-dumps.</p>
+
+<ul><li><a href="https://github.com/fjballest/docs/blob/master/uxintro/ch02g.pdf">Secciones de libro de texto</a>.</li></ul>
+
+<p>/proc.</p>
+
+<ul><li><a href="https://github.com/fjballest/docs/blob/master/uxintro/ch02h.pdf">Secciones de libro de texto</a>.</li></ul>
+
+<h3>Tema 3: Ficheros</h3>
+
+<p><a href="https://github.com/fjballest/docs/blob/master/uxintro/chap03.pdf">Capítulo 3 del libro</a>. <br>Ficheros, read y write.</p>
+
+<ul><li><a href="https://github.com/fjballest/docs/blob/master/uxintro/ch03a.pdf">Secciones de libro de texto</a>.</li></ul>
+
+<p>Open, close, el terminal y la consola.</p>
+
+<ul><li><a href="https://github.com/fjballest/docs/blob/master/uxintro/ch03b.pdf">Secciones de libro de texto</a>.</li></ul>
+
+<p>Offsets</p>
+
+<ul><li><a href="https://github.com/fjballest/docs/blob/master/uxintro/ch03c.pdf">Secciones de libro de texto</a>.</li></ul>
+
+<p>Creación, borrado y enlaces.</p>
+
+<ul><li><a href="https://github.com/fjballest/docs/blob/master/uxintro/ch03d.pdf">Secciones de libro de texto</a>.</li></ul>
+
+<p>Directorios y globbing.</p>
+
+<ul><li><a href="https://github.com/fjballest/docs/blob/master/uxintro/ch03e.pdf">Secciones de libro de texto</a>.</li></ul>
+
+<p>Metadatos.</p>
+
+<ul><li><a href="https://github.com/fjballest/docs/blob/master/uxintro/ch03f.pdf">Secciones de libro de texto</a>.</li></ul>
+
+<p>El tiempo.</p>
+
+<ul><li><a href="https://github.com/fjballest/docs/blob/master/uxintro/ch03fb.pdf">Secciones de libro de texto</a>.</li></ul>
+
+<p>Cambio de atributos.</p>
+
+<ul><li><a href="https://github.com/fjballest/docs/blob/master/uxintro/ch03g.pdf">Secciones de libro de texto</a>.</li></ul>
+
+<p>Enlaces y dispotivos</p>
+
+<ul><li><a href="https://github.com/fjballest/docs/blob/master/uxintro/ch03h.pdf">Secciones de libro de texto</a>.</li></ul>
+
+<p>Entrada/salida y buffering</p>
+
+<ul><li><a href="https://github.com/fjballest/docs/blob/master/uxintro/ch03i.pdf">Secciones de libro de texto</a>.</li></ul>
+
+<p>Segmentos y ficheros proyectados</p>
+
+<ul><li><a href="https://github.com/fjballest/docs/blob/master/uxintro/ch03j.pdf">Secciones de libro de texto</a>.</li></ul>
+
+<p>Montajes y espacios de nombres</p>
+
+<ul><li><a href="https://github.com/fjballest/docs/blob/master/uxintro/ch03k.pdf">Secciones de libro de texto</a>.</li></ul>
+
+<h3>Tema 4: Padres e hijos</h3>
+
+<p><a href="https://github.com/fjballest/docs/blob/master/chap04.pdf">Capítulo 4 del libro</a>. <br>Ejecutando un programa</p>
+
+<ul><li><a href="https://github.com/fjballest/docs/blob/master/uxintro/ch04a.pdf">Secciones de libro de texto</a>.</li></ul>
+
+<p>Creación de procesos</p>
+
+<ul><li><a href="https://github.com/fjballest/docs/blob/master/uxintro/ch04b.pdf">Secciones de libro de texto</a>.</li></ul>
+
+<p>Descriptores de fichero</p>
+
+<ul><li><a href="https://github.com/fjballest/docs/blob/master/uxintro/ch04c.pdf">Secciones de libro de texto</a>.</li></ul>
+
+<p>Cargando un nuevo programa</p>
+
+<ul><li><a href="https://github.com/fjballest/docs/blob/master/uxintro/ch04d.pdf">Secciones de libro de texto</a>.</li></ul>
+
+<p>Todo junto; wait y procesos en background</p>
+
+<ul><li><a href="https://github.com/fjballest/docs/blob/master//ch04e.pdf">Secciones de libro de texto</a>.</li></ul>
+
+<p>Ejecutables y scripts</p>
+
+<ul><li><a href="https://github.com/fjballest/docs/blob/master/uxintro/ch04f.pdf">Secciones de libro de texto</a>.</li></ul>
+
+<h3>Tema 5: Intercomunicación entre procesos</h3>
+
+<p><a href="https://github.com/fjballest/docs/blob/master/uxintro/chap05.pdf">Capítulo 5 del libro</a>. <br>Redirecciones de entrada/salida</p>
+
+<ul><li><a href="https://github.com/fjballest/docs/blob/master/uxintro/ch05a.pdf">Secciones de libro de texto</a>.</li></ul>
+
+<p>Pipelines</p>
+
+<ul><li><a href="https://github.com/fjballest/docs/blob/master/uxintro/ch05b.pdf">Secciones de libro de texto</a>.</li></ul>
+
+<p>Pipefrom y sustitución de comandos</p>
+
+<ul><li><a href="https://github.com/fjballest/docs/blob/master/uxintro/ch05c.pdf">Secciones de libro de texto</a>.</li></ul>
+
+<p>Pipes con nombre</p>
+
+<ul><li><a href="https://github.com/fjballest/docs/blob/master/uxintro/ch05cb.pdf">Secciones de libro de texto</a>.</li></ul>
+
+<p>Señales</p>
+
+<ul><li><a href="https://github.com/fjballest/docs/blob/master/uxintro/ch05d.pdf">Secciones de libro de texto</a>.</li></ul>
+
+<p>Alarmas y time-outs</p>
+
+<ul><li><a href="https://github.com/fjballest/docs/blob/master/uxintro/ch05e.pdf">Secciones de libro de texto</a>.</li></ul>
+
+<p>Terminales y sesiones</p>
+
+<ul><li><a href="https://github.com/fjballest/docs/blob/master/uxintro/ch05f.pdf">Secciones de libro de texto</a>.</li></ul>
+
+<h3>Tema 6: El shell como lenguaje</h3>
+
+<p><a href="https://github.com/fjballest/docs/blob/master/chap06.pdf">Capítulo 6 del libro</a>. <br>Herramientas y convenios</p>
+
+<ul><li><a href="https://github.com/fjballest/docs/blob/master/uxintro/ch06a.pdf">Secciones de libro de texto</a>.</li></ul>
+
+<p>Expresiones regulares</p>
+
+<ul><li><a href="https://github.com/fjballest/docs/blob/master/uxintro/ch06b.pdf">Secciones de libro de texto</a>.</li></ul>
+
+<p>Trabajando con líneas y campos</p>
+
+<ul><li><a href="https://github.com/fjballest/docs/blob/master/uxintro/ch06c.pdf">Seccion</a><a href="https://github.com/fjballest/docs/blob/master/uxintro/ch06c.pdf">e</a><a href="https://github.com/fjballest/docs/blob/master/uxintro/ch06c.pdf">s de libro de texto</a>.</li></ul>
+
+<p>Otras estructuras de control y funciones</p>
+
+<ul><li><a href="https://github.com/fjballest/docs/blob/master/uxintro/ch06d.pdf">Secciones de libro de texto</a>.</li></ul>
+
+<p>Editando streams</p>
+
+<ul><li><a href="https://github.com/fjballest/docs/blob/master/uxintro/ch06e.pdf">Secciones de libro de texto</a>.</li></ul>
+
+<p>Usando tablas</p>
+
+<ul><li><a href="https://github.com/fjballest/docs/blob/master/uxintro/ch06f.pdf">Secciones de libro de texto</a>.</li></ul>
+
+<h3>Tema 7: Concurrencia</h3>
+
+<p><a href="https://github.com/fjballest/docs/blob/master/uxintro/chap07.pdf">Capítulo 7 del libro</a>.Threads</p>
+
+<ul><li><a href="https://github.com/fjballest/docs/blob/master/uxintro/ch07a.pdf">Secciones de libro de texto</a>.</li></ul>
+
+<p>Regiones críticas</p>
+
+<ul><li><a href="https://github.com/fjballest/docs/blob/master/uxintro/ch07b.pdf">Secciones de libro de texto</a>.</li></ul>
+
+<p>Cierres</p>
+
+<ul><li><a href="https://github.com/fjballest/docs/blob/master/uxintro/ch07c.pdf">Secciones de libro de texto</a>.</li></ul>
+
+<p>Cierres en ficheros y cierres de lectura/escritura</p>
+
+<ul><li><a href="https://github.com/fjballest/docs/blob/master/uxintro/ch07d.pdf">Secciones de libro de texto</a>.</li></ul>
+
+<p>Deadlocks, livelocks y hambruna.</p>
+
+<ul><li><a href="https://github.com/fjballest/docs/blob/master/uxintro/ch07e.pdf">Secciones de libro de texto</a>.</li></ul>
+
+<p>Semáforos</p>
+
+<ul><li><a href="https://github.com/fjballest/docs/blob/master/uxintro/ch07f.pdf">Secciones de libro de texto</a>.</li></ul>
+
+<p>Semáforos con pipes</p>
+
+<ul><li><a href="https://github.com/fjballest/docs/blob/master/uxintro/ch07g.pdf">Secciones de libro de texto</a>.</li></ul>
+
+<p>El buffer acotado</p>
+
+<ul><li><a href="https://github.com/fjballest/docs/blob/master/uxintro/ch07h.pdf">Secciones de libro de texto</a>.</li></ul>
+
+<p>Monitores y variables condición</p>
+
+<ul><li><a href="https://github.com/fjballest/docs/blob/master/uxintro/ch07i.pdf">Secciones de libro de texto</a>.</li></ul>
+
+<h3>Tema 8: La red</h3>
+
+<p><a href="https://github.com/fjballest/docs/blob/master/uxintro/chap08.pdf">Capítulo 8 del libro</a>.Sockets</p>
+
+<ul><li><a href="https://github.com/fjballest/docs/blob/master/uxintro/ch08a.pdf">Secciones de libro de texto</a>.</li></ul>
+</main>
+<footer class="site">
+<div class="social"><a href="https://www.linkedin.com/in/franjballest">LinkedIn</a> · <a href="https://syssoftware.blogspot.com">Blogger</a> · <a href="https://github.com/fjballest">GitHub</a></div>
+</footer>
+</body>
+</html>

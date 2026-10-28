@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Systems – Fran. J. Ballesteros</title>
+<link rel="stylesheet" href="../style.css">
+<link rel="icon" href="../images/cropped-cloud.jpg">
+</head>
+<body>
+<header class="site">
+<div class="brand"><a class="site-title" href="../">Fran. J. Ballesteros</a><div class="tagline">mariner!nemo</div></div>
+<nav><ul class="menu"><li><a href="../">mariner!nemo</a></li><li><a href="./" aria-current="page">Systems</a></li><li class="has-sub"><a href="../software/">Software</a><ul><li><a href="../rb/">Rb</a></li><li><a href="../clive/">Clive</a></li><li><a href="../nix/">Nix</a></li><li><a href="../octopus/">Octopus</a></li><li><a href="../plan-b/">Plan B</a></li><li><a href="../picky/">Picky</a></li><li><a href="../off/">Off++</a></li></ul></li><li><a href="../books-papers/">Docs</a></li><li><a href="../cursos/">Cursos</a></li><li><a href="../about/">About</a></li><li><a href="../rb/">Rb</a></li></ul></nav>
+</header>
+<main>
+<h1>Systems</h1>
+<p>These are some systems I built. The most recent one goes first. See the <a href="../software/">software</a> and <a href="../books-papers/">doc</a> pages for details.</p>
+
+<hr class="wp-block-separator" />
+
+<p>Although not listed here, I made significant development for <a href="http://plan9.bell-labs.com/plan9">Plan 9 from Bell Labs</a>. All the software we made is either available through the standard Plan 9 distribution or in a contrib site exported publicly for Plan 9 systems.</p>
+
+<hr class="wp-block-separator" />
+
+<h2>Kv</h2>
+
+<p>Kv is a proprietary key-value data store built for leanXcale, distributed and built for high scalability and performance.</p>
+
+<hr class="wp-block-separator" />
+
+<h2>Clive&nbsp;</h2>
+
+<p><a href="../clive/">Clive</a> is a project just starting. Its aim is to bring back our beloved Plan9 style computing environment but for highly efficient cloud computing software stacks written in the Go language. In fact the plan is to remove the software stack and to let the software run on the bare hardware. </p>
+
+<p>The system is written in Go and C. </p>
+
+<hr class="wp-block-separator" />
+
+<h2>Nix&nbsp;</h2>
+
+<p><a href="../nix/">Nix</a> is joint work of Laboratorio de Sistemas with Bell Laboratories, Sandia National Labs, and Vitanuova. </p>
+
+<p>Nix is a system kernel that can partition cores into:</p>
+
+<ul><li>TCs: Time-sharing cores. Similar to cores as handled by SMP systems.</li><li>ACs: Application cores. User code runs undisturbed on them.</li><li>KCs: Kernel cores. They take system load like system calls and interrupt handling.</li></ul>
+
+<p>Cores can change their role at run-time, depending on the actual system load.</p>
+
+<p>This is most useful for&nbsp;<strong>HPC</strong>&nbsp;applications but also for&nbsp;<strong>Cloud Computing</strong>, because of both performance and convenience.</p>
+
+<p></p>
+
+<hr class="wp-block-separator" />
+
+<h2>Octopus&nbsp;</h2>
+
+<p><a href="../octopus/">Octopus</a> is a system designed to provide ubiquitous access to computing resources. Its approach is unique in that <strong>the central idea to distribute the system is to centralize everything</strong> on a personal computer. Devices and other services are later connected to this central system to provide distributed computing. Terminal devices rely on <strong>UpperWare</strong> to access system resources.</p>
+
+<hr class="wp-block-separator" />
+
+<h2>Philo II&nbsp;</h2>
+
+<p>Philo is a distributed data base core built for Ericson Research. To fulfill the terms of the project, no information is disclosed here.</p>
+
+<hr class="wp-block-separator" />
+
+<h2>O/live and O/mero&nbsp;</h2>
+
+<p>O/live and O/mero are a novel UIMS (window system and toolkit included) that relies on files to distribute user interfaces in a transparent way, while giving the user the freedom to rearrange and reconfigure anything in the user interface without requiring application facilities. They include a command language to control to control the interfaces.</p>
+
+<p>They were built as part of the Octopus, although they are a project on their own. See the <a href="../octopus/">octopus page</a> for for information, software, demos, and selected papers.</p>
+
+<hr class="wp-block-separator" />
+
+<h2>Plan B&nbsp;</h2>
+
+<p><a href="../plan-b/">Plan B</a> is an operating system designed to work in distributed environments where the set of available resources is different at different points in time. Its 4th edition is implemented as a set of user programs to run on top of <a href="http://plan9.bell-labs.com/planb">Plan 9</a> from Bell Labs. Previous editions used their own system kernel. It's main design guidelines are:</p>
+
+<ul><li>All resources are perceived as volumes. A volume is a file tree exported to the network together with a name and constraints.</li><li>The system operates on both local and remote boxes through the same protocol. Any implementor of such protocol can be used as part of a Plan B system.</li><li>Each application has its own name space and can customize it. Customization is done by defining names for volumes and specifying the desired order and constraints to tailor automatic import of network volumes.</li><li>Applications try to avoid connections to resources, by using calls that accept file names instead of file descriptors.</li><li>Volumes can be advertised as they become available to be automatically bound to pre-specified names in the name spaces of applications that care about such resources.&nbsp;</li></ul>
+
+<p></p>
+
+<hr class="wp-block-separator" />
+
+<h2>Off++&nbsp;</h2>
+
+<p><a href="../off/">Off++</a> was a distributed adaptable microkernel built as part of the UIUC 2K OS project.</p>
+
+<p>The more peculiar things about Off++ is that</p>
+
+<ul><li>The whole network, not a single node is considered to be the hardware to be managed.</li><li>The microkernel is made of three simple servers:<ul><li>The portal server: Portals can be used as ports to deliver messages. They are global and can migrate.</li><li>The shuttle server: provides customizable processes termed Shuttles. A shuttle is a processor context which can be extended later on. Shuttles can execute at any available CPU. </li><li>The memory manager: provides a distributed address space. Each address space can hold address translations for remote physical memory. </li></ul></li><li>A single abstraction, the Box, is used to export all resources (like Plan 9 does with files).</li></ul>
+
+<p></p>
+</main>
+<footer class="site">
+<div class="social"><a href="https://www.linkedin.com/in/franjballest">LinkedIn</a> · <a href="https://syssoftware.blogspot.com">Blogger</a> · <a href="https://github.com/fjballest">GitHub</a></div>
+</footer>
+</body>
+</html>

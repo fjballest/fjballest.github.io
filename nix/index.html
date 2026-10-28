@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nix – Fran. J. Ballesteros</title>
+<link rel="stylesheet" href="../style.css">
+<link rel="icon" href="../images/cropped-cloud.jpg">
+</head>
+<body>
+<header class="site">
+<div class="brand"><a class="site-title" href="../">Fran. J. Ballesteros</a><div class="tagline">mariner!nemo</div></div>
+<nav><ul class="menu"><li><a href="../">mariner!nemo</a></li><li><a href="../systems/">Systems</a></li><li class="has-sub"><a href="../software/">Software</a><ul><li><a href="../rb/">Rb</a></li><li><a href="../clive/">Clive</a></li><li><a href="./" aria-current="page">Nix</a></li><li><a href="../octopus/">Octopus</a></li><li><a href="../plan-b/">Plan B</a></li><li><a href="../picky/">Picky</a></li><li><a href="../off/">Off++</a></li></ul></li><li><a href="../books-papers/">Docs</a></li><li><a href="../cursos/">Cursos</a></li><li><a href="../about/">About</a></li><li><a href="../rb/">Rb</a></li></ul></nav>
+</header>
+<main>
+<h1>Nix</h1>
+<h2>Get rid of the operating system!&nbsp;</h2>
+
+<p><strong>High performance cloud computing is nix&nbsp;</strong></p>
+
+<hr class="wp-block-separator" />
+
+<p>Nix mark I was joint work of Laboratorio de Sistemas with Bell Laboratories, Sandia National Labs, and Vitanuova.&nbsp;<br>Mark II incorporated an open development model, and found its way into&nbsp;<a href="http://9atom.org/">9tom</a>&nbsp;and the kernel can be found along with other kernels in the distribution. Thanks to Erik Quanstrom for maintaining the distribution and adopting the system. This version is still evolving there.&nbsp;<br>Nix mark IV is a new research prototype for the system. It is joint work of Lsub with with Bell Laboratories and Vitanuova.</p>
+
+<hr class="wp-block-separator" />
+
+<p>Most desktop and laptop machines today, even phones, are multicore. But OSes are still built as decades ago. Nix is able to lend cores to applications with no OS interference (not even clock interrupts), but still provides all functionality of a conventional operating system.</p>
+
+<p>In particular, for applications, Nix is not different from a&nbsp;<a href="http://plan9.bell-labs.com/plan9">Plan 9 from Bell Labs</a>&nbsp;kernel. However, Nix can partition cores into:</p>
+
+<ul><li>TCs: Time-sharing cores. Similar to cores as handled by SMP systems.</li><li>ACs: Application cores. User code runs undisturbed on them.</li><li>KCs: Kernel cores. They take system load like system calls and interrupt handling.</li></ul>
+
+<p>Cores can change their role at run-time, depending on the actual system load.</p>
+
+<p>This is most useful for&nbsp;<strong>HPC</strong>&nbsp;applications but also for&nbsp;<strong>Cloud Computing</strong>, because of both performance and convenience.</p>
+
+<hr class="wp-block-separator" />
+
+<h2>Software</h2>
+
+<ul><li>For nix Mark II, the main development tree was hosted at&nbsp;<strong>sources.lsub.org</strong>. We are developing the Mark IV version of the kernel, which can be found in the same place.</li><li>here you have the <a href="https://github.com/fjballest/nix.markII.git">Mark II</a>&nbsp;system containing everything.</li><li>and the prototype <a href="https://github.com/fjballest/nixMarkIV.git">mark IV kernel</a>. This one is intended to be used with a standard Plan 9 system, and is still work in progress, is more advanced than the mark II, but does not yet include the Mark II ACs.</li></ul>
+
+<hr class="wp-block-separator" />
+
+<h2>Selected documents</h2>
+
+<ul><li><strong>Analyzing manycore OS design aspects in NIX</strong>. Francisco J. Ballesteros, Noah Evans, Charles Forsyth, Gorka Guardiola, Jim McKie, Ron Minnich, and Enrique Soriano. Poster, ACM SIGOPS EuroSys 2012 Conference Bern, Switzerland, 2012. Abstract <a href="https://github.com/fjballest/docs/blob/master/nixposterabs.pdf">pdf</a>. Poster <a href="https://github.com/fjballest/docs/blob/master/posternix.pdf">pdf</a>. </li><li><strong>Nix: a case for a manycore system for cloud computing</strong>. Francisco J. Ballesteros, Noah Evans, Charles Forsyth, Gorka Guardiola, Jim McKie, Ron Minnich, and Enrique Soriano. Bell Labs Technical Journal. 2012.</li><li><strong>High Performance Cloud Computing is Nix.</strong>. Francisco J. Ballesteros, Noah Evans, Charles Forsyth, Gorka Guardiola, Jim McKie, Ron Minnich, and Enrique Soriano. Bell Labs Technical Conference. 2011.</li></ul>
+
+<hr class="wp-block-separator" />
+
+<h2>Authors</h2>
+
+<p>The mark I system started as joint work of the&nbsp;Laboratorio de Sistemas, Bell Laboratories, Sandia National Labs, and Vitanuova. This was the initial list of authors on the early days. More people has contributed to the software as of now.</p>
+
+<ul><li>Francisco J Ballesteros</li><li>Noah Evans</li><li>Charles Forsyth</li><li>Gorka Guardiola</li><li>Jim McKie</li><li>Ron Minnich</li><li>Enrique Soriano</li></ul>
+
+<p>The mark II system incorporated other authors, listed in the CONTRIBUTORS file in the distribution.&nbsp;<br>The mark IV system is authored jointly by Lsub, Bell Labs, and Vitanuova (as of now). Once it's complete, we will update the CONTRIBUTORS file before distributing it.</p>
+</main>
+<footer class="site">
+<div class="social"><a href="https://www.linkedin.com/in/franjballest">LinkedIn</a> · <a href="https://syssoftware.blogspot.com">Blogger</a> · <a href="https://github.com/fjballest">GitHub</a></div>
+</footer>
+</body>
+</html>

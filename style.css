@@ -1,0 +1,42 @@
+:root { --fg: #222; --muted: #666; --bg: #fff; --link: #0b5cad; --rule: #ddd; }
+@media (prefers-color-scheme: dark) {
+  :root { --fg: #e6e6e6; --muted: #9a9a9a; --bg: #161616; --link: #7db4ff; --rule: #333; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--fg);
+  font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
+a { color: var(--link); }
+header.site, main, footer.site { max-width: 860px; margin: 0 auto; padding: 0 16px; }
+header.site { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center;
+  gap: 12px; padding-top: 24px; padding-bottom: 16px; border-bottom: 1px solid var(--rule); }
+.site-title { font-size: 1.6em; font-weight: 700; color: var(--fg); text-decoration: none; }
+.tagline { color: var(--muted); font-size: .9em; }
+nav ul { list-style: none; margin: 0; padding: 0; }
+nav .menu { display: flex; flex-wrap: wrap; gap: 4px 18px; }
+nav .menu > li { position: relative; }
+nav a { text-decoration: none; }
+nav a[aria-current] { font-weight: 700; color: var(--fg); }
+nav .has-sub > a::after { content: " ▾"; font-size: .8em; }
+nav .has-sub ul { display: none; position: absolute; left: 0; top: 100%; z-index: 10; min-width: 140px;
+  padding: 6px 12px; background: var(--bg); border: 1px solid var(--rule); border-radius: 4px; }
+nav .has-sub:hover ul, nav .has-sub:focus-within ul { display: block; }
+main { padding-top: 8px; padding-bottom: 40px; }
+main img { max-width: 100%; height: auto; }
+figure { margin: 1em 0; }
+.alignright { float: right; margin: 0 0 1em 1em; }
+.alignleft { float: left; margin: 0 1em 1em 0; }
+.aligncenter, .has-text-align-center { text-align: center; }
+.has-text-align-right { text-align: right; }
+.is-style-circle-mask img { border-radius: 50%; }
+hr { border: 0; border-top: 1px solid var(--rule); margin: 2em 0; clear: both; }
+pre { overflow-x: auto; background: rgba(127,127,127,.1); padding: 12px; }
+.wp-block-jetpack-layout-grid { display: flex; flex-wrap: wrap; gap: 24px; }
+.wp-block-jetpack-layout-grid-column:first-child { flex: 0 0 160px; }
+.wp-block-jetpack-layout-grid-column:last-child { flex: 1 1 300px; }
+footer.site { border-top: 1px solid var(--rule); padding-top: 16px; padding-bottom: 32px;
+  color: var(--muted); font-size: .9em; clear: both; }
+@media (max-width: 600px) {
+  nav .has-sub ul { display: block; position: static; border: 0; padding: 0 0 0 12px; }
+  nav .has-sub > a::after { content: ""; }
+  .alignright, .alignleft { float: none; margin: 0; }
+}

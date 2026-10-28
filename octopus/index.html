@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Octopus – Fran. J. Ballesteros</title>
+<link rel="stylesheet" href="../style.css">
+<link rel="icon" href="../images/cropped-cloud.jpg">
+</head>
+<body>
+<header class="site">
+<div class="brand"><a class="site-title" href="../">Fran. J. Ballesteros</a><div class="tagline">mariner!nemo</div></div>
+<nav><ul class="menu"><li><a href="../">mariner!nemo</a></li><li><a href="../systems/">Systems</a></li><li class="has-sub"><a href="../software/">Software</a><ul><li><a href="../rb/">Rb</a></li><li><a href="../clive/">Clive</a></li><li><a href="../nix/">Nix</a></li><li><a href="./" aria-current="page">Octopus</a></li><li><a href="../plan-b/">Plan B</a></li><li><a href="../picky/">Picky</a></li><li><a href="../off/">Off++</a></li></ul></li><li><a href="../books-papers/">Docs</a></li><li><a href="../cursos/">Cursos</a></li><li><a href="../about/">About</a></li><li><a href="../rb/">Rb</a></li></ul></nav>
+</header>
+<main>
+<h1>Octopus</h1>
+<h1 class="has-text-align-right"><img src="http://lsub.org/ls/octopus.png" alt=""></h1>
+
+<hr class="wp-block-separator" />
+
+<h2>Distribute by centralizing it all&nbsp;</h2>
+
+<hr class="wp-block-separator" />
+
+<p>See a&nbsp;<a href="http://lsub.org/ls/demos.html">demos page</a>&nbsp;for some&nbsp;<strong>demonstrations of the system</strong>.</p>
+
+<hr class="wp-block-separator" />
+
+<p>The world changes fast: today, most users typically have access to several computers at work, at home and while in transit, all of them interconnected through Internet. This world is far from perfection: users face decentralized, uncoordinated, heterogeneous, and highly dynamic, practically uncontrolled environments. It is hard to develop and deploy applications for such a world. And once done, it is difficult to use them smoothly, unless one sits in front of the computer where they were deployed. We argue that one way to solve this problem is to first apply centralization as a design principle, and then recognize the existence of other computers running their native OS's, importing their devices and controlling them from a central computer. Doing so it would be possible both, to easily build systems that can leverage on all the devices available to a given user, independently of its location, and to easily use those systems.</p>
+
+<p>Octopus is a system designed to provide ubiquitous access to computing resources. Its approach is unique in that&nbsp;<strong>the central idea to distribute the system is to centralize everything</strong>&nbsp;on a personal computer. Devices and other services are later connected to this central system to provide distributed computing.&nbsp;</p>
+
+<p>The system derives from <a href="../plan-b/">Plan B</a>, therefore it is heavily influenced by <a href="http://plan9.bell-labs.com/plan9">Plan 9</a>, and shares most of the source code with both systems. The <a href="https://github.com/fjballest/octopus">software</a> is available.</p>
+
+<p>This <a href="https://github.com/fjballest/docs/blob/master/gpc.pdf">position statement</a> describes the original idea that started this project. For a description of the system, you may read some of the papers listed in the <a href="../books-papers/">papers page</a>. </p>
+
+<p>A  <a href="https://github.com/fjballest/docs/blob/master/otut.pdf">tutorial</a> is available.</p>
+
+<p><br>Here is a screenshot of the system</p>
+
+<figure class="wp-block-image size-large"><img src="https://franjballest.wordpress.com/wp-content/uploads/2020/11/image.jpeg" alt="" class="wp-image-212" /></figure>
+
+<hr class="wp-block-separator" />
+
+<h2>Software</h2>
+
+<p>Much of the software listed here is also available from Plan 9's sources file server (see /contrib/nemo).</p>
+
+<p><strong>Octopus is under the same License used by Inferno</strong>, as indicated in our <a href="https://github.com/fjballest/octopus/blob/master/NOTICE.Octopus">NOTICE.Octopus</a> file. See the various license files in the Inferno system used to install the Octopus. This affects both manual pages and source code. It shouldn't be a problem, because you need Inferno to run the Octopus. By downloading any of our distributions you are accepting that license.</p>
+
+<p>This list describes parts of the system useful on their own and provides access to the entire distribution. Refer to the <a href="https://github.com/fjballest/octopus/blob/master/INSTALL.Octopus">INSTALL.Octopus</a> file to see how to install the software.</p>
+
+<ul><li>The <a href="http://lsub.org/sys/oman">user's manual</a> for the development version of the Octopus. Also available in <a href="https://github.com/fjballest/docs/blob/master/oman.pdf">pdf</a>.</li><li>The <a href="https://www.dropbox.com/s/p9qigjpzhw5l4os/o.zip?dl=0">bundled distribution of the octopus</a>, including everything needed. This bundle includes Inferno, binaries and source for the Octopus, O/mero, O/live, Ofs, Oxport, and everything else but for the Plan 9 software shown below. </li><li>A distribution of the <a href="https://github.com/fjballest/octopus">Octopus software</a>, without Inferno. Useful to <strong>upgrade</strong> your distribution. Includes just the octopus files (contents of /dis/o and /usr/octopus), in case you want just pre-compiled binaries for a terminal or just the source for the octopus.</li><li><a href="https://github.com/fjballest/9octopus.git">Plan 9 software for </a>use when the Octopus PC is a Plan 9 machine. For example, programs using O/mero but executing on Plan 9, and mouse and keyboard redirectors for Plan 9.</li><li>O/live and O/mero. The octopus window system for Inferno. This <a href="https://github.com/fjballest/octopus/blob/master/README.Omero">README</a> shows how to install and how to run it. </li><li>Ofs and Oxport. Two programs to connect Inferno systems across high latency links. This <a href="https://github.com/fjballest/octopus/blob/master/README.Op">README</a> shows how to install them. </li><li>An Op file server capable of exporting resources from Nokia N95 devices. </li></ul>
+</main>
+<footer class="site">
+<div class="social"><a href="https://www.linkedin.com/in/franjballest">LinkedIn</a> · <a href="https://syssoftware.blogspot.com">Blogger</a> · <a href="https://github.com/fjballest">GitHub</a></div>
+</footer>
+</body>
+</html>
