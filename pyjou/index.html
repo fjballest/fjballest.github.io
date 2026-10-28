@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DayJournal – Fran. J. Ballesteros</title>
+<link rel="stylesheet" href="../style.css">
+<link rel="icon" href="../images/cropped-cloud.jpg">
+</head>
+<body>
+<header class="site">
+<div class="brand"><a class="site-title" href="../">Fran. J. Ballesteros</a><div class="tagline">mariner!nemo</div></div>
+<nav><ul class="menu"><li><a href="../">mariner!nemo</a></li><li><a href="../systems/">Systems</a></li><li class="has-sub"><a href="../software/">Software</a><ul><li><a href="../rb/">Rb</a></li><li><a href="./" aria-current="page">DayJournal</a></li><li><a href="../tradingview/">TradingView</a></li><li><a href="../clive/">Clive</a></li><li><a href="../nix/">Nix</a></li><li><a href="../octopus/">Octopus</a></li><li><a href="../plan-b/">Plan B</a></li><li><a href="../picky/">Picky</a></li><li><a href="../off/">Off++</a></li></ul></li><li><a href="../books-papers/">Docs</a></li><li><a href="../cursos/">Cursos</a></li><li><a href="../about/">About</a></li><li><a href="../rb/">Rb</a></li></ul></nav>
+</header>
+<main>
+<h1>DayJournal</h1>
+
+<figure class="alignright"><img src="https://raw.githubusercontent.com/fjballest/pyjou/master/Icon.png" alt="DayJournal icon" width="103"></figure>
+
+<h2>A journal of day charts</h2>
+
+<hr>
+
+<p>DayJournal browses a day journal: a directory with snapshots of day and week charts. It reads the text written in each image with OCR and uses the words as tags, so the images can be searched. Each image can have notes of its own and drawings on it. Still in alpha, just born for personal use, provided as-is.</p>
+
+<ul>
+<li>Lists the captures by year, month and week, with a calendar, and goes through them with the arrow keys.</li>
+<li>Searches the tags, the notes and the drawing labels, with <code>!</code> (not), <code>|</code> (or) and parentheses.</li>
+<li>Adds captures dropped on the window, guessing their date from the dates written in them and the file's date.</li>
+<li>Draws on the captures: lines, arrows and circles with labels, rectangles with FVG, IFVG, BRK and MB presets, Fibonacci levels (OTE, quadrants, PO3 or your own), and text, with undo.</li>
+<li>Hides the list and the notes to give the chart the whole window, and zooms with a pinch.</li>
+</ul>
+
+<p>It uses the same tools as <a href="../rb/">Rb</a> (PySide6 Qt and easyocr). The source, the <a href="https://github.com/fjballest/pyjou/blob/master/docs/MANUAL.md">user manual</a> and the <a href="https://github.com/fjballest/pyjou/blob/master/docs/DESIGN.md">design notes</a> are at <a href="https://github.com/fjballest/pyjou">github.com/fjballest/pyjou</a>.</p>
+
+<hr>
+
+<p>A day with two FVGs and an IFVG+ drawn from the Rect menu, and its notes:</p>
+<figure><img src="https://raw.githubusercontent.com/fjballest/pyjou/master/screenshots/fvg1.png" alt="DayJournal with FVGs drawn"></figure>
+
+<p>The same day with the list and the notes hidden, zoomed on the FVGs:</p>
+<figure><img src="https://raw.githubusercontent.com/fjballest/pyjou/master/screenshots/fvg2.png" alt="DayJournal zoomed on FVGs"></figure>
+</main>
+<footer class="site">
+<div class="social"><a href="https://www.linkedin.com/in/franjballest">LinkedIn</a> · <a href="https://syssoftware.blogspot.com">Blogger</a> · <a href="https://github.com/fjballest">GitHub</a></div>
+</footer>
+</body>
+</html>

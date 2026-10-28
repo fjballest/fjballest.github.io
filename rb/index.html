@@ -10,39 +10,48 @@
 <body>
 <header class="site">
 <div class="brand"><a class="site-title" href="../">Fran. J. Ballesteros</a><div class="tagline">mariner!nemo</div></div>
-<nav><ul class="menu"><li><a href="../">mariner!nemo</a></li><li><a href="../systems/">Systems</a></li><li class="has-sub"><a href="../software/">Software</a><ul><li><a href="./" aria-current="page">Rb</a></li><li><a href="../clive/">Clive</a></li><li><a href="../nix/">Nix</a></li><li><a href="../octopus/">Octopus</a></li><li><a href="../plan-b/">Plan B</a></li><li><a href="../picky/">Picky</a></li><li><a href="../off/">Off++</a></li></ul></li><li><a href="../books-papers/">Docs</a></li><li><a href="../cursos/">Cursos</a></li><li><a href="../about/">About</a></li><li><a href="./" aria-current="page">Rb</a></li></ul></nav>
+<nav><ul class="menu"><li><a href="../">mariner!nemo</a></li><li><a href="../systems/">Systems</a></li><li class="has-sub"><a href="../software/">Software</a><ul><li><a href="./" aria-current="page">Rb</a></li><li><a href="../pyjou/">DayJournal</a></li><li><a href="../tradingview/">TradingView</a></li><li><a href="../clive/">Clive</a></li><li><a href="../nix/">Nix</a></li><li><a href="../octopus/">Octopus</a></li><li><a href="../plan-b/">Plan B</a></li><li><a href="../picky/">Picky</a></li><li><a href="../off/">Off++</a></li></ul></li><li><a href="../books-papers/">Docs</a></li><li><a href="../cursos/">Cursos</a></li><li><a href="../about/">About</a></li><li><a href="./" aria-current="page">Rb</a></li></ul></nav>
 </header>
 <main>
 <h1>Rb</h1>
 <p>Because trading statistics can be fun.</p>
 
-<figure class="wp-block-image alignright size-large"><img src="../images/icon.png" alt="" class="wp-image-375" /></figure>
+<figure class="alignright"><img src="https://raw.githubusercontent.com/fjballest/rb/master/Icon.png" alt="Rb icon" width="103"></figure>
 
-<h2 class="wp-block-heading">Trading roadbook</h2>
+<h2>Trading roadbook</h2>
 
-<hr class="wp-block-separator has-css-opacity" />
+<hr>
 
-<p>This is a just-born trading roadbook that can filter trades based on setups and features to gather stats useful to learn something. Still in alpha.</p>
+<p>RoadBook (rb) is a trading journal: it keeps your trades with their setup, features, notes and charts, and tells you which features make trades work. Still in alpha, just born for personal use, provided as-is.</p>
 
-<p>It is far from ready to be used by someone other than me, but, just in case, the source and binaries for MacOS, Linux, and Windows can be found <a href="https://github.com/fjballest/rb/">here</a>.</p>
+<ul>
+<li>Trades grouped by year, month and week, with their totals, and a calendar by month or by year colored by result.</li>
+<li>AutoFeatures, which reads the notes of the trades and checks the features named there.</li>
+<li>Filters by instrument, setup, features, direction, day, hour and dates, plus a text filter with <code>!</code> (not), <code>|</code> (or) and parentheses.</li>
+<li>Stats and plots per result, day, week, month, setup, instrument and hour.</li>
+<li>Charts for each trade, dropped on the trade form and read with OCR to fill in the trade. The graphics window can draw on them: lines, arrows, rectangles with FVG, IFVG and BRK presets, Fibonacci levels with OTE, and labels.</li>
+<li>Backups of the roadbook and its charts.</li>
+</ul>
 
-<hr class="wp-block-separator has-css-opacity" />
+<p>The source, the <a href="https://github.com/fjballest/rb/blob/master/docs/MANUAL.md">user manual</a> and the <a href="https://github.com/fjballest/rb/blob/master/docs/DESIGN.md">design document</a> are at <a href="https://github.com/fjballest/rb">github.com/fjballest/rb</a>. Binaries for macOS, Linux and Windows are in its <a href="https://github.com/fjballest/rb/releases">releases</a>.</p>
 
-<p>Here are some screenshots</p>
+<hr>
 
-<figure class="wp-block-image size-large"><img src="../images/screen1.png" alt="" class="wp-image-378" /></figure>
+<p>The trades, grouped by month and week, with the quick text filter and the features of the selected trade:</p>
+<figure><img src="https://raw.githubusercontent.com/fjballest/rb/master/screenshots/screen1.png" alt="Rb trades list"></figure>
 
-<figure class="wp-block-image size-large"><img src="../images/screen2.png" alt="" class="wp-image-379" /></figure>
+<p>The calendar, by month and by year:</p>
+<figure><img src="https://raw.githubusercontent.com/fjballest/rb/master/screenshots/screen2.png" alt="Rb calendar by month"></figure>
+<figure><img src="https://raw.githubusercontent.com/fjballest/rb/master/screenshots/screen6.png" alt="Rb calendar by year"></figure>
 
-<hr class="wp-block-separator has-css-opacity" />
+<p>The filter window:</p>
+<figure><img src="https://raw.githubusercontent.com/fjballest/rb/master/screenshots/screen3.png" alt="Rb filter window"></figure>
 
-<figure class="wp-block-image size-large"><img src="../images/screen3.png" alt="" class="wp-image-380" /></figure>
+<p>Stats:</p>
+<figure><img src="https://raw.githubusercontent.com/fjballest/rb/master/screenshots/screen4.png" alt="Rb stats"></figure>
 
-<figure class="wp-block-image size-large"><img src="../images/screen4.png" alt="" class="wp-image-381" /></figure>
-
-<figure class="wp-block-image size-large"><img src="../images/screen5.png" alt="" class="wp-image-382" /></figure>
-
-<figure class="wp-block-image size-large"><img src="../images/screen6.png" alt="" class="wp-image-383" /></figure>
+<p>The graphics window for a trade, with an FVG, an IFVG- and a BRK rectangle, OTE Fibonacci levels and a labeled line drawn on the chart:</p>
+<figure><img src="https://raw.githubusercontent.com/fjballest/rb/master/screenshots/screen5.png" alt="Rb graphics window"></figure>
 </main>
 <footer class="site">
 <div class="social"><a href="https://www.linkedin.com/in/franjballest">LinkedIn</a> · <a href="https://syssoftware.blogspot.com">Blogger</a> · <a href="https://github.com/fjballest">GitHub</a></div>

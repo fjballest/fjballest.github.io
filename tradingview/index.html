@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TradingView indicators – Fran. J. Ballesteros</title>
+<link rel="stylesheet" href="../style.css">
+<link rel="icon" href="../images/cropped-cloud.jpg">
+</head>
+<body>
+<header class="site">
+<div class="brand"><a class="site-title" href="../">Fran. J. Ballesteros</a><div class="tagline">mariner!nemo</div></div>
+<nav><ul class="menu"><li><a href="../">mariner!nemo</a></li><li><a href="../systems/">Systems</a></li><li class="has-sub"><a href="../software/">Software</a><ul><li><a href="../rb/">Rb</a></li><li><a href="../pyjou/">DayJournal</a></li><li><a href="./" aria-current="page">TradingView</a></li><li><a href="../clive/">Clive</a></li><li><a href="../nix/">Nix</a></li><li><a href="../octopus/">Octopus</a></li><li><a href="../plan-b/">Plan B</a></li><li><a href="../picky/">Picky</a></li><li><a href="../off/">Off++</a></li></ul></li><li><a href="../books-papers/">Docs</a></li><li><a href="../cursos/">Cursos</a></li><li><a href="../about/">About</a></li><li><a href="../rb/">Rb</a></li></ul></nav>
+</header>
+<main>
+<h1>TradingView indicators</h1>
+
+<p>ICT tools for TradingView, written in Pine Script. The published ones can be added to a chart from my <a href="https://es.tradingview.com/u/franjballest/#published-scripts">TradingView profile</a>, and the sources are at <a href="https://github.com/fjballest/tvsrc">github.com/fjballest/tvsrc</a>.</p>
+
+<hr>
+
+<h2>ICTlevels</h2>
+<p>Draws ICT time-based reference levels on intraday charts of NQ (New York time) and DAX (Madrid time): day, week and month highs and lows, sessions (killzones), the premarket range, NDOG/NWOG and RTHOG opening gaps, and equal highs and lows. It draws levels only, with no signals. <a href="https://github.com/fjballest/tvsrc/blob/master/doc/ICTlevels-user-manual.md">User manual</a> · <a href="https://github.com/fjballest/tvsrc/blob/master/doc/ICTlevels-design-document.md">design</a> · <a href="https://github.com/fjballest/tvsrc/blob/master/ICTlevels.txt">source</a></p>
+
+<h2>ICTcotas</h2>
+<p>Draws higher timeframe PD arrays so you can trade lower timeframes against daily, weekly and monthly reference levels: FVGs and inversion FVGs, volume imbalances, wick C.E. lines, and FVG boxes for 15m to monthly timeframes. It is a map of levels, not a strategy. <a href="https://github.com/fjballest/tvsrc/blob/master/doc/ICTcotas-user-manual.md">User manual</a> · <a href="https://github.com/fjballest/tvsrc/blob/master/doc/ICTcotas-design-document.md">design</a> · <a href="https://github.com/fjballest/tvsrc/blob/master/ICTcotas.txt">source</a></p>
+
+<h2>FVGs+IFVG+OTE</h2>
+<p>Finds fair value gaps on the execution chart, watches them for inversion, and flags when an inverted FVG lines up with an ICT Optimal Trade Entry on the chart timeframe or the next two higher ones. It also draws the first presented FVG of the session and the C.E. of large wicks, and raises alerts. <a href="https://github.com/fjballest/tvsrc/blob/master/doc/FVGs+IFVG+OTE-user-manual.md">User manual</a> · <a href="https://github.com/fjballest/tvsrc/blob/master/doc/FVGs+IFVG+OTE-design-document.md">design</a> · <a href="https://github.com/fjballest/tvsrc/blob/master/FVGS+IFVG+OTE.txt">source</a></p>
+
+<h2>IFVG+CISD Bias</h2>
+<p>A table with one column per timeframe, from weekly down to the chart timeframe, showing the IFVG bias and the CISD-style delivery of each one. It draws no levels and raises no alerts. <a href="https://github.com/fjballest/tvsrc/blob/master/doc/IFVGCISDbias-design-document.md">Design</a> · <a href="https://github.com/fjballest/tvsrc/blob/master/IFVGCISDbias.txt">source</a></p>
+
+<h2>Other scripts</h2>
+<ul>
+<li><a href="https://github.com/fjballest/tvsrc/blob/master/FVGs.txt">FVGs</a>, <a href="https://github.com/fjballest/tvsrc/blob/master/MTFVGS.txt">MTFVGs</a> and <a href="https://github.com/fjballest/tvsrc/blob/master/ICTscalpHTFFVGs.txt">ICTscalpHTFFVGs</a></li>
+<li><a href="https://github.com/fjballest/tvsrc/blob/master/ICTScalp.txt">ICTScalp</a>, <a href="https://github.com/fjballest/tvsrc/blob/master/ICTScalp15.txt">ICTScalp15</a>, <a href="https://github.com/fjballest/tvsrc/blob/master/ICTScalpSes.txt">ICTScalpSes</a> and the <a href="https://github.com/fjballest/tvsrc/blob/master/ICTScalpStrategy.txt">ICTScalp strategy</a></li>
+<li><a href="https://github.com/fjballest/tvsrc/blob/master/ICTOctants.txt">ICToctants</a>, <a href="https://github.com/fjballest/tvsrc/blob/master/ICTPriceOctants.txt">ICT-Price-octants</a> and <a href="https://github.com/fjballest/tvsrc/blob/master/ICTRange.txt">ICTRange</a></li>
+<li><a href="https://github.com/fjballest/tvsrc/blob/master/OTEFibWick.txt">OTEFibWick</a> and <a href="https://github.com/fjballest/tvsrc/blob/master/Wicks.txt">Wicks</a></li>
+<li><a href="https://github.com/fjballest/tvsrc/blob/master/DeliveryCISD.txt">Delivery CISD</a> and <a href="https://github.com/fjballest/tvsrc/blob/master/Futures%20Risk%20Manager.txt">Futures Risk Manager</a></li>
+</ul>
+<p>DeliveryEngine.txt in the repository is not mine: it is Nuno's Delivery Engine, which some of these scripts take ideas from.</p>
+
+<h2>Ports to other platforms</h2>
+<p>ICTlevels, ICTcotas and FVGs+IFVG+OTE are also ported to <a href="https://github.com/fjballest/tvsrc/tree/master/ninja">NinjaTrader 8</a> (C#) and <a href="https://github.com/fjballest/tvsrc/tree/master/tradovate">Tradovate</a> (JavaScript). Neither port has been run on its platform yet.</p>
+</main>
+<footer class="site">
+<div class="social"><a href="https://www.linkedin.com/in/franjballest">LinkedIn</a> · <a href="https://syssoftware.blogspot.com">Blogger</a> · <a href="https://github.com/fjballest">GitHub</a></div>
+</footer>
+</body>
+</html>
